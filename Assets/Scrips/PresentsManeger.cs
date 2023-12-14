@@ -19,6 +19,7 @@ public class PresentsManeger : MonoBehaviour
     private ColorProvider _colorProvider;
     private Dictionary<Color, int> _presentsCountsByColor = new();
     private List<Present> _presents = new();
+    
     public void Initialize(ColorProvider colorProvider)
     {
         _colorProvider = colorProvider;

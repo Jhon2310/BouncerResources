@@ -18,6 +18,7 @@ public class PresentsView : MonoBehaviour
         {
             var color = colors[i];
             _presentsColors[i].color = color;
+            _presentsCountLabel[i].color = color;
         }
     }
     public void SetCountOfPresentsWithColor(Color color, int count)

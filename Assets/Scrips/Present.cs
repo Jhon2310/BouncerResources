@@ -11,7 +11,6 @@ public class Present : MonoBehaviour
      public event Action<Present> PickUpAGift;
      [SerializeField] private Renderer _lidRenderer;
      public Color Color => _color;
-     
      private Color _color;
     
      public void Initialize(Color color)
