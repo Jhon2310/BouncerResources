@@ -183,6 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84250f5e03ff2e4daea9f3081bb2378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EventWhoToreOffAGift:
+    m_PersistentCalls:
+      m_Calls: []
   _lidRenderer: {fileID: 3883157627317210276}
 --- !u!65 &2579907545359709184
 BoxCollider:

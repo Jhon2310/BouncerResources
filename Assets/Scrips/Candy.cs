@@ -12,7 +12,6 @@ public class Candy : MonoBehaviour
    [SerializeField] private Renderer _renderer;
    [SerializeField] private float _randomPositionMax = 5f;
    [SerializeField] private float _randomPositionMin = -5f;
-   
 
    public void Initialize(ColorProvider colorProvider)
    {

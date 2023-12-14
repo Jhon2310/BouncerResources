@@ -1,26 +1,22 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    
-    
+    public UnityEvent<int> PlayerMoved;
     [SerializeField] private float _speed = 100f;
     [SerializeField] private Rigidbody _rigidbody;
-    
-    
-    private Camera _camera;
-    
 
+    private int _movementCount;
+    private Camera _camera;
     private void Start()
     {
         _camera = Camera.main;
-        
     }
-
-   
     private void Update()
     {
         var mousePosition = Input.mousePosition;
@@ -35,12 +31,12 @@ public class Player : MonoBehaviour
                 var newPosition = point - transform.position;
                 newPosition.Normalize();
                 _rigidbody.AddForce(newPosition*_speed);
+                
+                PlayerMoved.Invoke(++_movementCount);
             }
         }
     }
+    
 
-    public void Initialize()
-    {
-        Instantiate(gameObject);
-    }
+  
 }
