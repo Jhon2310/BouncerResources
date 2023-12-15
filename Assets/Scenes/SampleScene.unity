@@ -746,9 +746,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _colorProvider:
     _colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 1, b: 0, a: 0}
-    - {r: 0, g: 0, b: 1, a: 0}
+    - {r: 1, g: 0.05471578, b: 0, a: 1}
+    - {r: 0, g: 1, b: 0, a: 1}
+    - {r: 0, g: 0, b: 1, a: 1}
   _presentsManeger: {fileID: 960227865}
   _candy: {fileID: 2067970813}
   _presentsView: {fileID: 747624863}

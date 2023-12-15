@@ -14,10 +14,11 @@ public class GameManeger : MonoBehaviour
     
     private void Awake()
     {
+        _presentsView.Initialize(_colorProvider);
         _presentsManeger.Initialize(_colorProvider);
         _candy.Initialize(_colorProvider);
         _candy.ChangeTheColorOfTheCandy += HandleChangeTheColorOfTheCandy;
-        _presentsView.Initialize(_colorProvider);
+        
 
     }
 
